@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Most Comments</title>
+    <link th:href="@{/css/styles.css}" type="text/css" media="all" rel="stylesheet"/>
+</head>
+<body>
+    <a class="button-main" href="/movieCentre">Back</a>
+    <div class="div-center">
+        <h1>The user with the most comments is: </h1>
+        <h1 th:text="${mostCommentedUser}"></h1>
+    </div>
+</body>
+</html>

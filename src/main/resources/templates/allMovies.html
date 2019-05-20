@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All Movie</title>
+    <link th:href="@{/css/styles.css}" type="text/css" media="all" rel="stylesheet"/>
+</head>
+<body>
+    <a class="button-main" href="/movieCentre">Back</a>
+    <div align="center">
+        <h1 >All movie information and user comments.</h1>
+        <div class="list-container">
+            <dl class="data-container" th:each="movie :${movies}">
+
+                <dt class="dt">Movie Id : </dt>
+                <dd class="dd" th:text="${movie.movieId}">Movie ID</dd>
+
+                <dt class="dt">Title : </dt>
+                <dd class="dd" th:text="${movie.title}">Title</dd>
+
+                <dt class="dt">Description : </dt>
+                <dd class="dd" th:text="${movie.description}">Description</dd>
+
+                <dt class="dt">Producer : </dt>
+                <dd class="dd" th:text="${movie.producer}">Producer</dd>
+
+                <dt class="dt">Available in 3D : </dt>
+                <dd class="dd" th:text="${movie.availableIn3d}">Available in 3D</dd>
+
+                <dt class="dt">Age rating : </dt>
+                <dd class="dd" th:text="${movie.ageRating}">Age rating</dd>
+
+                <dt class="dt">Likes :</dt>
+                <dd class="dd" th:text="${movie.likes}">Likes</dd>
+
+                <label style="font-weight:bold;">Comments :</label>
+                <div class="comments-container" th:each="comment :${movie.comments}">
+                    <dt class="dt">User :</dt>
+                    <dd class="dd" th:text="${comment.user}">User</dd>
+
+                    <dt class="dt">Message : </dt>
+                    <dd class="dd" th:text="${comment.message}">Message</dd>
+
+                    <dt class="dt">Date Created : </dt>
+                    <dd class="dd" th:text="${comment.dateCreated}">Date created</dd>
+
+                    <dt class="dt">Likes : </dt>
+                    <dd class="dd" th:text="${comment.like}">Likes</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

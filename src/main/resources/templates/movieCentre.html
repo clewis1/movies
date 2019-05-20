@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Centre</title>
+    <link th:href="@{/css/styles.css}" type="text/css" media="all" rel="stylesheet"/>
+</head>
+<body>
+    <div align="center">
+        <h1>You are now at the movie centre page!</h1>
+
+        <input type="button" class="button-main" onclick="location.href='/allMovies'" value="View data of all movies" >
+        <input type="button" class="button-main" onclick="location.href='/mostComments'" value="View the top commenter" >
+        <input type="button" class="button-main" onclick="location.href='/mostLikes'" value="View the most liked movie" >
+    </div>
+</body>
+</html>

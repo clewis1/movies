@@ -1,0 +1,53 @@
+
+.button-main {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.data-container{
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  background: #efefef;
+  padding: 10px;
+}
+
+.comments-container{
+  overflow: hidden;
+  text-align: left;
+  background: #efefef;
+  padding: 10px;
+}
+
+.dt {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.dd {
+    margin-left: 0px;
+}
+
+.div-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
